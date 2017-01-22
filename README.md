@@ -72,6 +72,6 @@ After the application is started it will be possible to perform the same operati
 ## Verify application and Mongo started correctly
 Perform a GET request to the folling example endpoints:
 
-http://localhost:8080/pcw/PCW45-12345-12345-1234X/address/ie/D02X285?lines=3&format=json
+- http://localhost:8080/pcw/PCW45-12345-12345-1234X/address/ie/D02X285?lines=3&format=json
 
-http://localhost:8080/pcw/PCW45-12345-12345-1234X/address/uk/NR147PZ?format=json
+- http://localhost:8080/pcw/PCW45-12345-12345-1234X/address/uk/NR147PZ?format=json
