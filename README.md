@@ -1,15 +1,15 @@
 # postcoder
 
 # Project description
-This is a Demo application of using `Spring Boot` and `MongoDB`, along with Spring modules like `Core`, `Web`, `AOP` and `Cache`.
+This is a Demo application of using `Spring Boot` and `MongoDB`, along with Spring modules like `Core`, `Web`, `Data`, `AOP` and `Cache`.
 
-This application is intended to work as a middleware of part of a third party Rest Service in order to avoid repeated requests and achieve that this application stores all the different requests and stores the responses.
+This application is intended to work as a middleware of a third party API Service (only implement part of the functionality) in order to avoid repeated requests and achieve that this application stores all the different requests and return the responses with no need of additional repeated requests to the third party API service.
 
 The implemented endpoints of the third party API are described in the following urls:
 - https://developers.alliescomputing.com/postcoder-web-api/address-lookup/eircode
 - https://developers.alliescomputing.com/postcoder-web-api/address-lookup/premise
 
-All the responses received from the third party Rest Service are stored in a `MongoDB` database and it is also cached to offer the corresponding response when it is received a repeated request. 
+All the responses received from the third party API Service are stored in a `MongoDB` database and they are also cached to offer the corresponding response when it is received a repeated request. Additionaly, the stored responses are loaded into the Cache when the application is started.
 
 ## How to run the project locally
 To build, or run project locally `java` and `MongoDB` should be installed.
