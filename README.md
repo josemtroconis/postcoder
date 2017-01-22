@@ -14,7 +14,7 @@ All the responses received from the third party API Service are stored in a `Mon
 ## How to run the project locally
 To build, or run project locally `java` and `MongoDB` should be installed.
 ```bash
-cd `project folder`
+cd `your_project_folder`
 ```
 ```bash
 mvn package
@@ -49,7 +49,7 @@ docker run --name postcoder-mongo --network=postcoder_net -v ~/mongo-data:/data/
 ### Build project and copy jar file to docker folder
 To build current project and copy `jar` file to the `docker` folder of current project:
 ```bash
-mvn package && cp `project folder`/target/postcoder-1.0.0.jar docker/
+mvn package && cp `your_project_folder`/target/postcoder-1.0.0.jar docker/
 ```
 
 ### Build application's image
